@@ -67,7 +67,7 @@ const SplashScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
             <div className="relative w-40 h-40 mx-auto flex items-center justify-center">
               <div className="relative group">
                 <img 
-                  src="/public/Logo_PIS-removebg-preview.png" 
+                  src="/logo.png" 
                   alt="PARA Logo" 
                   className="w-24 h-24 drop-shadow-2xl transition-transform duration-500 group-hover:scale-110"
                 />

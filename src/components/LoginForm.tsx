@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Eye, EyeOff, AlertCircle, ArrowRight, Shield, User, UserPlus, Building } from 'lucide-react';
+import { Eye, EyeOff, AlertCircle, ArrowRight, Shield, User, UserPlus } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import SignUpForm from './SignUpForm';
 
@@ -59,9 +59,11 @@ const LoginForm: React.FC = () => {
           <div className="text-center mb-8">
             <div className="flex justify-center mb-6">
               <div className="relative">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <Building className="w-8 h-8 text-white" />
-                </div>
+                <img 
+                  src="/logo.png" 
+                  alt="PARA Logo" 
+                  className="w-16 h-16"
+                />
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-20 blur-lg"></div>
               </div>
             </div>

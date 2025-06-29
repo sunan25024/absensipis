@@ -10,8 +10,7 @@ import {
   Star,
   Play,
   Menu,
-  X,
-  Building
+  X
 } from 'lucide-react';
 
 interface LandingPageProps {
@@ -75,9 +74,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <Building className="w-6 h-6 text-white" />
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="PARA Logo" 
+                className="w-10 h-10"
+              />
               <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                 PARA
               </span>
@@ -155,9 +156,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
             
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-8 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="w-full h-64 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                  <Building className="w-24 h-24 text-white opacity-90" />
-                </div>
+                <img 
+                  src="/logo.png" 
+                  alt="PARA Dashboard" 
+                  className="w-full h-auto rounded-xl opacity-90"
+                />
               </div>
               <div className="absolute -top-4 -right-4 bg-yellow-400 text-yellow-900 px-4 py-2 rounded-full font-semibold shadow-lg">
                 Pilihan #1
@@ -277,9 +280,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                  <Building className="w-5 h-5 text-white" />
-                </div>
+                <img 
+                  src="/logo.png" 
+                  alt="PARA Logo" 
+                  className="w-8 h-8"
+                />
                 <span className="ml-2 text-xl font-bold">PARA</span>
               </div>
               <p className="text-gray-400">

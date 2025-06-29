@@ -77,7 +77,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ message = "Loading..." })
           <div className="relative w-32 h-32 mx-auto flex items-center justify-center">
             <div className="relative">
               <img 
-                src="/public/Logo_PIS-removebg-preview.png" 
+                src="/logo.png" 
                 alt="PARA Logo" 
                 className="w-16 h-16 drop-shadow-2xl animate-pulse"
               />
@@ -95,7 +95,8 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ message = "Loading..." })
             <span className="inline-block animate-bounce" style={{ animationDelay: '0.2s' }}>R</span>
             <span className="inline-block animate-bounce" style={{ animationDelay: '0.3s' }}>A</span>
           </h1>
-          <p className="text-blue-200 text-lg font-medium">Smart Attendance System</p>
+          <p className="text-blue-200 text-lg font-medium tracking-wide">Smart Attendance System</p>
+          <p className="text-blue-300/80 text-sm mt-2">Powered by Advanced AI Technology</p>
         </div>
 
         {/* Progress Section */}
@@ -165,7 +166,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ message = "Loading..." })
       {/* Bottom Branding */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <p className="text-blue-300/60 text-xs">
-          Powered by PARA Technology
+          © 2024 PARA Technology • All Rights Reserved
         </p>
       </div>
     </div>
