@@ -9,7 +9,8 @@ import {
   Search,
   ChevronDown,
   Shield,
-  User
+  User,
+  Building
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import NotificationCenter from './NotificationCenter';
@@ -92,11 +93,9 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage, onPageChange }) 
             <div className="flex items-center">
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-lg"></div>
-                <img 
-                  src="/public/Logo_PIS-removebg-preview.png" 
-                  alt="PARA Logo" 
-                  className="relative w-8 h-8 sm:w-10 sm:h-10 drop-shadow-lg"
-                />
+                <div className="relative w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
+                  <Building className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                </div>
               </div>
               <div className="ml-2 sm:ml-3">
                 <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent drop-shadow-sm">
